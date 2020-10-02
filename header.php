@@ -14,8 +14,12 @@
         <link rel="icon" sizes="192x192" href="<?php echo get_option('morii_highres_favicon'); ?>">
 
         <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/styles/daylight-switch.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/styles/tooltips.css' type='text/css' media='all' />
         <!-- iconfont-icons -->
         <link rel="stylesheet" href="//at.alicdn.com/t/font_1980391_er18uopnsel.css">
+
+        <!-- custom header -->
+        <?php echo stripslashes(get_option('morii_header')); ?>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

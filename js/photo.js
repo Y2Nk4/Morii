@@ -53,7 +53,7 @@ $(document).ready(function () {
             console.log('Good Night!')
             switchNight()
         } else {
-
+            switchDay()
         }
     }
 

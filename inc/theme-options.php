@@ -18,7 +18,25 @@ $options = array(
     array(
         'name'  => '首页文字',
         'id'    => $shortname . "_index_title",
-        'type'  => 'text',
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '页脚文字',
+        'id'    => $shortname . "_footer_title",
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '自定义头部内容',
+        'id'    => $shortname . "_header",
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '页脚JS',
+        'id'    => $shortname . "_footer_js",
+        'type'  => 'textarea',
         'std'   => ''
     ),
     array(
@@ -82,7 +100,7 @@ $options = array(
         'name'  => '首页描述',
         'desc'  => '用简洁的文字描述本站点，字数建议在 120 个字以内。',
         'id'    => $shortname . "_meta_description",
-        'type'  => 'text',
+        'type'  => 'textarea',
         'std'   => ''
     ),
     array(

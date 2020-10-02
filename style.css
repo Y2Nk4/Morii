@@ -31,21 +31,21 @@ html {
 }
 body {
 	/*font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-	font-family: "SF Pro Text","SF Pro Display","SF Pro Icons",'PingHei', 'PingFang SC',"Helvetica Neue","Helvetica","Arial",sans-serif,'Microsoft YaHei',sans-serif;
+	font-family: "SF Pro Text","SF Pro Display","SF Pro Icons",'PingHei', 'PingFang SC', 'justus-pro', "acumin-pro","Helvetica Neue","Helvetica","Arial",sans-serif,'Microsoft YaHei',sans-serif;
 	color:#444;
 }
 /* clear */
 .clear:before,
 .clear:after {
-    content:' ';
-    display:table;
+	content:' ';
+	display:table;
 }
 
 .clear:after {
-    clear:both;
+	clear:both;
 }
 .clear {
-    *zoom:1;
+	*zoom:1;
 }
 img {
 	max-width:100%;
@@ -114,6 +114,12 @@ p.header-sub-title{
 .header > nav.nav > ul > li.menu-item:not(:first-child):before{
 	content: '/';
 	padding-right: 10px;
+}
+article p{
+	font-weight: 200;
+	font-style: normal;
+	font-size: 17px;
+	line-height: 1.55em;
 }
 /* img */
 .post_img{
@@ -231,6 +237,10 @@ article > .article-header > .date, article > .article-header > .location{
 	color: #606060;
 	font-weight: 300;
 }
+.copyright {
+	font-weight: 100;
+	line-height: 1.65em;
+}
 
 /*------------------------------------*\
     NIGHT
@@ -282,11 +292,11 @@ hr.article-split-line.night{
 	font-family:'Font-Name';
 	src:url('fonts/font-name.eot');
 	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-		url('fonts/font-name.woff') format('woff'),
-		url('fonts/font-name.ttf') format('truetype'),
-		url('fonts/font-name.svg#font-name') format('svg');
-    font-weight:normal;
-    font-style:normal;
+	url('fonts/font-name.woff') format('woff'),
+	url('fonts/font-name.ttf') format('truetype'),
+	url('fonts/font-name.svg#font-name') format('svg');
+	font-weight:normal;
+	font-style:normal;
 }
 
 /*------------------------------------*\
@@ -312,7 +322,7 @@ hr.article-split-line.night{
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
-	   only screen and (min-resolution:144dpi) {
+only screen and (min-resolution:144dpi) {
 
 }
 

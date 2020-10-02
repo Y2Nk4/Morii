@@ -138,7 +138,9 @@ function my_the_content_filter($content) {
             }
         }
 
-        $replacement = '<div class="post_img">' . $img . $meta_content . '</div>';
+        preg_match("/\<img.+src\=(?:\"|\')(.+?)(?:\"|\')(?:.+?)\>/", $img, $matches);
+
+        $replacement = '<div class="post_img"><picture> <source srcset="' . $matches[1] . '" type="image/webp"> <source srcset="' . $matches[1] .'.fallback" type="image/jpeg"> ' . $img . ' </picture>' . $meta_content . '</div>';
         $content = str_replace($img, $replacement, $content);
     }
 
@@ -149,7 +151,6 @@ function my_the_content_filter($content) {
 $currentTheme = wp_get_theme();
 $themename = $currentTheme->get('Name');
 $shortname = strtolower($themename);
-
 require_once('inc/theme-options.php');
 
 function morii_seo_meta ($keywords='', $description='') {
